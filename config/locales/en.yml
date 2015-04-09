@@ -38,7 +38,7 @@ en:
       link_with: 'Log In with %{provider}'
     signup:
       title: 'Sign Up'
-      link: 'Sign Up'
+      link: 'Get Started'
       help: 'Already registered? %{login_link}'
       email_taken: 'An account with your email already exists. %{login_link}'
     logout:

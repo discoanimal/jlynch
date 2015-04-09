@@ -13,16 +13,17 @@
     = csrf_meta_tags
     = yield :head
     = render 'layouts/airbrake'
-  %body{class: "controller__#{controller_name} action__#{action_name}"}
-    = render 'layouts/navigation'
-    .container
-      .errors__container
-        = render 'layouts/messages'
+  %body{:class => "controller__#{controller_name} action__#{action_name}"}
+    .wrapper
+      = render 'layouts/navigation'
+      = render 'layouts/messages'
       = yield
-      %footer.page__footer
-        - if content_for? :footer
-          = yield :footer
-        - else
-          = render 'layouts/footer'
+      - if content_for? :footer
+        = yield :footer
+      - else
+        = render 'layouts/footer'
+    .back-to-top
+      %a{:href => "#top"}
+        %i.fa.fa-angle-up
     = render 'layouts/analytics'
     = render 'layouts/javascripts'

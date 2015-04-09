@@ -13,12 +13,20 @@
 #= require jquery_2
 #= require jquery_ujs
 #= require bootstrap
+#= require jquery.easing
+#= require jquery.fitvids
+#= require jquery.bxslider
+#= require slick
 #= require jquery.turbolinks
+#= require scriptss
 #= require turbolinks
 #= require nprogress
 #= require nprogress-turbolinks
 #= require rails_confirm_dialog
 #= require jquery.scrollto
+#= require jquery.localscroll
+#= require jquery.vide
+#= require detectmobiledevices
 
 # Add error class to .avatar images if they fail to load
 # See avatar.scss and _avatar.html.haml

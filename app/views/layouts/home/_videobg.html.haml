@@ -1,0 +1,16 @@
+%section#top.hero-unit.fullscreen-video-bg.clearfix{"data-vide-bg" => "videos/sky", "data-vide-options" => "loop: true, posterType: png"}
+  .container
+    .left
+      = image_tag ("zi-logo.png"), :class => 'logo'
+      %h1
+        %span.sr-only 
+        = I18n.t('brand.home_headline')
+      %p.lead= I18n.t('brand.home_subheadline')
+      .store-buttons
+        = link_to image_tag( 'btn-appstore.png', :alt => "App Store"), '#', :class => 'btn btn-appstore'
+        = link_to image_tag( 'btn-googleplay.png', :alt => "App Store"), '#', :class => 'btn btn-googleplay'
+    .right
+      = image_tag ("section-header-iphone.png")
+    .learn-more
+      %a{:href => "#howitworks"}
+        %i.fa.fa-angle-down

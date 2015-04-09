@@ -26,9 +26,9 @@
 //
 
 // Padding to clear fixed nav
-body {
-  padding-top: 70px;
-}
+// body {
+//  padding-top: 70px;
+// }
 
 // Make sure alerts are nicely formatted
 .alert {
@@ -42,3 +42,16 @@ body {
   bottom: 15px;
   top: auto;
 }
+
+
+
+@import "general";
+
+// import third-party
+@import "jquery.bxslider";
+@import "slick.custom";
+
+// import web elements
+@import "page";
+
+@import "base";
