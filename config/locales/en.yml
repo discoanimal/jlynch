@@ -19,10 +19,17 @@
 en:
   brand:
     name: 'JLynch'
+    home_headline: 'Home Headline'
+    home_subheadline: 'Home Sub Headline'
 
   emails:
     welcome:
       subject: 'Welcome to JLynch'
+      cta: 'Email Call to Action'
+      action_button: 'Action Button'
+      body: 'Blah Blah Blah'
+      body_title: 'Body Title'
+      body_subtitle: 'Body Subtitle'
 
   auth:
     login:

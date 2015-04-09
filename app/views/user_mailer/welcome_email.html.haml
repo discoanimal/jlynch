@@ -7,19 +7,18 @@
   Welcome #{@user.display_name}!
 
 - content_for :lead do
-  Thanks for signing up to
-  = succeed '.' do
-    = link_to I18n.t('brand.name'), root_url
+  Thanks for signing up!
+  / = succeed '.' do
+  /   = link_to I18n.t('brand.name'), root_url
 
 - content_for :callout do
-  %p
-    We're calling you out to pay attention to what we're saying here.
+  %p= I18n.t('emails.welcome.cta')
 
 - content_for :action_button do
-  = link_to 'Get Active', root_url
+  = link_to I18n.t('emails.welcome.action_button'), root_url
 
 
 %h3
-  TODO
-  %small Replace this content.
-%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  = I18n.t('emails.welcome.body_title')
+  %small= I18n.t('emails.welcome.body_subtitle')
+%p= I18n.t('emails.welcome.body')
