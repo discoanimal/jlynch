@@ -2,18 +2,9 @@ source 'https://rubygems.org'
 ruby '2.1.3'
 
 gem 'rails', '~> 4.1.6'
-
-#
-# PLATFORM SPECIFIC
-#
-# OSX
 gem 'rb-fsevent', group: [:development, :test]        # monitor file changes without hammering the disk
 gem 'terminal-notifier-guard', group: [:development]  # notify terminal when specs run
 gem 'terminal-notifier', group: [:development]
-# LINUX
-# gem 'rb-inotify', :group => [:development, :test]   # monitor file changes without hammering the disk
-
-
 
 # Monitoring
 gem 'rack-timeout', '~> 0.1.0beta4'

@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: <%= Rails.application.config.settings.app_name %>_development
   pool: 5
-  username: postgres
+  username: jlynch
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -48,7 +48,7 @@ test:
   encoding: unicode
   database: <%= Rails.application.config.settings.app_name %>_test
   pool: 5
-  username: postgres
+  username: jlynch
   password:
 
 production:
@@ -56,5 +56,5 @@ production:
   encoding: unicode
   database: <%= Rails.application.config.settings.app_name %>_production
   pool: 5
-  username: postgres
+  username: jlynch
   password:

@@ -3,34 +3,26 @@
 # than English, add the necessary files in this directory.
 #
 # To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
+# I18n.t 'hello'
 #
 # In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
+# <%= t('hello') %>
 #
 # To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
+# I18n.locale = :es
 # This would use the information in config/locales/es.yml.
 #
-# To learn more, please read the Rails Internationalization guide
+# Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
 
-#
-# TODO: Replace instances of 'StarterKit' in this file with your app brand name.
-#
-
 en:
   brand:
-    name: 'StarterKit'
+    name: 'JLynch'
 
   emails:
     welcome:
-      subject: 'Welcome to StarterKit'
+      subject: 'Welcome to JLynch'
 
   auth:
     login:
@@ -68,7 +60,7 @@ en:
       prompt: 'Disconnect this social account?'
       tooltip: 'Disconnect social account and remove related data'
       warning: ''
-      notice: 'Your social account will be disconnected form your StarterKit account. You can reconnect the social account at any time.'
+      notice: 'Your social account will be disconnected form your JLynch account. You can reconnect the social account at any time.'
       submit: 'Yes, disconnect the account'
       cancel: 'Cancel'
     reconnect:
