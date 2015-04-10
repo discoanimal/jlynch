@@ -2,6 +2,22 @@ class PagesController < ApplicationController
   skip_authorization_check
   skip_before_action :authenticate_user!
 
+  def privacy
+    user_agent = UserAgent.parse(request.user_agent)
+    @browser = user_agent.browser
+    @version = user_agent.version
+    @platform = user_agent.platform
+    @uas = user_agent
+    @os = user_agent.os
+    @mobile = user_agent.mobile?
+    @bot = user_agent.bot?
+    @hash = user_agent.to_h
+    @dup = user_agent.dup
+    @truth = user_agent.eql?(@dup)
+    @ip = request.remote_ip
+    @realip = request.params
+  end
+
   # Preview html email template
   def email
     tpl = (params[:layout] || 'hero').to_sym

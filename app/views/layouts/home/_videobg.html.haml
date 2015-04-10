@@ -2,9 +2,7 @@
   .container
     .left
       = image_tag ("zi-logo.png"), :class => 'logo'
-      %h1
-        %span.sr-only 
-        = I18n.t('brand.home_headline')
+      %h1= I18n.t('brand.home_headline')
       %p.lead= I18n.t('brand.home_subheadline')
       .store-buttons
         = link_to image_tag( 'btn-appstore.png', :alt => "App Store"), '#', :class => 'btn btn-appstore'

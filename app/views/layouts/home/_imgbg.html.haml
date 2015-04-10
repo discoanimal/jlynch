@@ -1,14 +1,22 @@
-%section#top.hero-unit.fullscreen-img-bg.clearfix
+%section#top.hero-unit.fullscreen-img-bg
   .container
     .left
-      = image_tag ("zi-logo.png"), :class => 'logo'
-      %h1
-        %span.sr-only 
-        = I18n.t('brand.home_headline')
+      .icons
+        / %a.tw{:href => "#"}
+        /   %i.fa.fa-twitter
+        / %a.fb{:href => "#"}
+        /   %i.fa.fa-facebook
+        %a.pe{:href => "#"}
+          %i.fa.fa-camera-retro
+          / = image_tag ("zi-logo.png"), :class => 'logo'
+      %h1= I18n.t('brand.home_headline')
       %p.lead= I18n.t('brand.home_subheadline')
       .store-buttons
         = link_to image_tag( 'btn-appstore.png', :alt => "App Store"), '#', :class => 'btn btn-appstore'
         = link_to image_tag( 'btn-googleplay.png', :alt => "App Store"), '#', :class => 'btn btn-googleplay'
+
+      
+
     .right
       = image_tag ("section-header-iphone.png")
     .learn-more

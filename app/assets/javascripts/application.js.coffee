@@ -27,6 +27,7 @@
 #= require jquery.localscroll
 #= require jquery.vide
 #= require detectmobiledevices
+#= require fingerprint2
 
 # Add error class to .avatar images if they fail to load
 # See avatar.scss and _avatar.html.haml

@@ -11,6 +11,14 @@
     = javascript_include_tag 'head', 'data-turbolinks-track' => true
     = headjs_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    %link{ :href => "http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900", :rel => "stylesheet", :type => "text/css"}
+    %link{ :href => "http://fonts.googleapis.com/css?family=Sansita+One", :rel => "stylesheet", :type => "text/css"}
+    %link{ :href => "http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic", :rel => "stylesheet", :type => "text/css"}
+    %link{ :href => "http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100", :rel => "stylesheet", :type => "text/css"}
+    %link{ :href => "http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic", :rel => "stylesheet", :type => "text/css"}
+    %link{ :href => "http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700", :rel => "stylesheet", :type => "text/css"}
+    %link{ :href => "http://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}
+    %link{ :href => "http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700", :rel => "stylesheet", :type => "text/css"}
     = yield :head
     = render 'layouts/airbrake'
   %body{:class => "controller__#{controller_name} action__#{action_name}"}
